@@ -11,6 +11,22 @@ h1
 
 #txt_volts
 {
+    font-size: 22px;
+    color: #3399ff;
     border: 2px solid #3399ff;
-    border-radius: 6px;    
+    border-radius: 6px;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+}
+
+#txt_volts :active
+{
+    border: 2px solid #3399ff;
+}
+
+button
+{
+    color: #ffffff;
+    background-color: #3399ff;
 }
