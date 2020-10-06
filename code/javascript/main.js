@@ -1,10 +1,10 @@
-voltagem = document.getElementById("txt_volts").value;
-tela = document.getElementById("tela").value;
+let voltagem;
 function calcular(impedancia)
 {
+    voltagem = document.getElementById("txtvolts").value;
     switch (impedancia) {
         case 4:
-            window.alert(voltagem);
+            document.getElementById("tela").innerText = voltagem;
             break;
         case 6:
             window.alert(voltagem);
@@ -15,5 +15,6 @@ function calcular(impedancia)
         case 16:
             window.alert(voltagem);
             break;
+
     }
 }
