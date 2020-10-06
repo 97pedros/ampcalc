@@ -1,20 +1,22 @@
 let voltagem;
+let potencia;
 function calcular(impedancia)
 {
     voltagem = document.getElementById("txtvolts").value;
-    switch (impedancia) {
+    switch (impedancia)
+    {
         case 4:
-            document.getElementById("tela").innerText = voltagem;
+            potencia = voltagem * voltagem / impedancia+" Watts";
             break;
         case 6:
-            window.alert(voltagem);
+            potencia = voltagem * voltagem / impedancia+" Watts";
             break;
         case 8:
-            window.alert(voltagem);
+            potencia = voltagem * voltagem / impedancia+" Watts";
             break;
         case 16:
-            window.alert(voltagem);
+            potencia = voltagem * voltagem / impedancia+" Watts";
             break;
-
     }
+        document.getElementById("tela").innerText = potencia;
 }
