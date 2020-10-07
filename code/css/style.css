@@ -8,6 +8,10 @@ body
 
 h1
 {
+    position: absolute;
+    top: 2vw;
+    left: 40vw;
+    right: 40vw;
     color: #3399ff;
     margin-top: 4vh;
     margin-bottom: 2vh;
@@ -15,6 +19,9 @@ h1
 
 #txtvolts
 {
+    position: absolute;
+    top: 12vw;
+    left: 28%;
     font-size: 22px;
     color: #3399ff;
     border: 2px solid #3399ff;
@@ -114,5 +121,8 @@ button:hover
 
   #dark
   {
-      margin-top: 60vh;
+    position: absolute;
+    bottom: 5vh;
+    left: 40vw;
+    right: 40vw;
   }

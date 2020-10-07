@@ -9,21 +9,21 @@
     <body>
         <h1 id="tela">WattsCalc</h1>
         <input type="number" id="txtvolts" placeholder="Volts">
+            <div id="dark">
+                <p>Dark mode</p>
+                <label class="switch">
+                <input type="checkbox" id="darkmode">
+                    <span class="slider round">
+                    </span>
+                </label>
+            </div>
         <script src="../javascript/main.js"></script>
-        <div name="botões">
+        <div name="botoes">
             <p></p>
             <button onclick="calcular(4)" id="4">4Ω</button>
             <button onclick="calcular(6)" id="6">6Ω</button>
             <button onclick="calcular(8)" id="8">8Ω</button>
             <button onclick="calcular(16)" id="16">16Ω</button>
-        </div>
-        <div id="dark">
-            <p>Dark mode</p>
-            <label class="switch">
-                <input type="checkbox" id="darkmode">
-                <span class="slider round">
-                </span>
-            </label>
         </div>
     </body>
 </html>

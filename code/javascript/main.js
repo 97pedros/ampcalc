@@ -1,5 +1,7 @@
 let voltagem;
 let potencia;
+let checkbox;
+
 function calcular(impedancia)
 {
     voltagem = document.getElementById("txtvolts").value;
@@ -19,4 +21,9 @@ function calcular(impedancia)
             break;
     }
         document.getElementById("tela").innerText = potencia;
+}
+
+function darkmode()
+{
+    checkbox = document.getElementById("darkmode")
 }
