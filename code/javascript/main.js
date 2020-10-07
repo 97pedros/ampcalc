@@ -1,7 +1,8 @@
 let voltagem;
 let potencia;
 let checkbox;
-
+let corpo;
+let txtvolts;
 function calcular(impedancia)
 {
     voltagem = document.getElementById("txtvolts").value;
@@ -25,5 +26,19 @@ function calcular(impedancia)
 
 function darkmode()
 {
-    checkbox = document.getElementById("darkmode")
+    checkbox = document.getElementById("darkmode");
+    corpo = document.getElementById("corpo");
+    txtvolts = document.getElementById("txtvolts");
+    if(checkbox.checked == true)
+    {
+        corpo.style.backgroundColor = "#000000";
+        txtvolts.style.backgroundColor = "#ffffff";
+        txtvolts.style.border = "3px solid #3399ff"
+    }
+    else
+    {
+        corpo.style.backgroundColor = "#ffffff";
+        txtvolts.style.backgroundColor = "#ffffff";
+        txtvolts.style.border = "2px solid #3399ff"
+    }
 }
