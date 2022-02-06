@@ -5,6 +5,51 @@ body
     background-color: #ffffff;
     text-align: center;
 }
+
+h1
+{
+    font-size: 50px;
+    color: #3399ff;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+#txtvolts
+{
+    font-size: 22px;
+    color: #3399ff;
+    border: 2px solid #3399ff;
+    border-radius: 6px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+#txt_volts:active
+{
+    border: 2px solid #3399ff;
+}
+
+button
+{
+    margin: 1%;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 6px;
+    display: inline;
+    color: #ffffff;
+    background-color: #3399ff;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+button:hover
+{
+    background-color: #84c2ff;
+}
+
 /* The switch - the box around the slider */
 .switch 
 {
@@ -75,4 +120,12 @@ input:checked + .slider:before
 .slider.round:before 
 {
     border-radius: 50%;
+}
+
+#dark
+{
+    position: absolute;
+    bottom: 5vh;
+    left: 40vw;
+    right: 40vw;
 }

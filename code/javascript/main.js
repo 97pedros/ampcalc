@@ -1,9 +1,10 @@
 /**********************************************************
- * (c) 2020 Pedro dos santos, são paulo, brasil           *
+ * (c) 2022 Pedro dos santos, são paulo, brasil           *
  * O objetivo desse código é ser parte de um app mobile   *
  * mas está escrito de forma horrível, porem funcional    *
 ***********************************************************/
 let voltagem;
+let impedancia;
 let potencia;
 let checkbox;
 let corpo;
@@ -14,25 +15,12 @@ checkbox = document.getElementById("darkmode");
 
 
 // faz o calculo da potencia recebendo a voltagem da saída do amplificador
-function calcular(impedancia)
+function calcular()
 {
     voltagem = document.getElementById("txtvolts").value;
+    impedancia = document.getElementById("txtohm").value;
     //o calculo em si
-    switch (impedancia)
-    {
-        case 4:
-            potencia = voltagem * voltagem / impedancia+" Watts";
-            break;
-            case 6:
-            potencia = voltagem * voltagem / impedancia+" Watts";
-            break;
-            case 8:
-                potencia = voltagem * voltagem / impedancia+" Watts";
-                break;
-                case 16:
-            potencia = voltagem * voltagem / impedancia+" Watts";
-            break;
-    }
+    potencia = voltagem * voltagem / impedancia+" Watts";
     //substitui o titulo no h1 pelo resultado
     document.getElementById("tela").innerText = potencia;
 }

@@ -5,10 +5,19 @@
         <meta charset="utf-8">
         <title>Ampcalc</title>
         <link rel="stylesheet" href="../css/style.css">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7883193183063669"
+     crossorigin="anonymous"></script>
     </head>
     <body id="corpo">
         <h1 id="tela">WattsCalc</h1>
         <input autocomplete="off" autofocus type="number" id="txtvolts" placeholder="Volts">
+        <br>
+        <input autocomplete="off" autofocus type="number" id="txtohm" placeholder="Impedancia Ω">
+        <script src="../javascript/main.js"></script>
+        <div name="botoes">
+            <p></p>
+            <button onclick="calcular()">Calcular</button>
+        </div>
             <div id="dark">
                 <p>Dark mode</p>
                 <label class="switch">
@@ -17,13 +26,5 @@
                     </span>
                 </label>
             </div>
-        <script src="../javascript/main.js"></script>
-        <div name="botoes">
-            <p></p>
-            <button onclick="calcular(4)" id="4">4Ω</button>
-            <button onclick="calcular(6)" id="6">6Ω</button>
-            <button onclick="calcular(8)" id="8">8Ω</button>
-            <button onclick="calcular(16)" id="16">16Ω</button>
-        </div>
     </body>
 </html>
