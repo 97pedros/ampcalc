@@ -9,23 +9,23 @@
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7883193183063669"
      crossorigin="anonymous"></script>
     </head>
-    <body id="corpo">
+    <body id="corpo" onload="darkmode()">
         <h1 id="tela">WattsCalc</h1>
         <input autocomplete="off" class="textbox" autofocus type="number" id="txtvolts" placeholder="Volts">
         <br>
         <input autocomplete="off" class="textbox" autofocus type="number" id="txtohm" placeholder="Impedancia Ω">
-        <script src="../javascript/main.js"></script>
         <div name="botoes">
             <p></p>
             <button onclick="calcular()">Calcular</button>
         </div>
-            <div id="dark">
-                <p>Dark mode</p>
-                <label class="switch">
+        <div id="dark">
+            <p>Dark mode</p>
+            <label class="switch">
                 <input type="checkbox" id="darkmode" onclick="darkmode()">
-                    <span class="slider round">
-                    </span>
-                </label>
-            </div>
+                <span class="slider round">
+                </span>
+            </label>
+        </div>
+        <script src="../javascript/main.js"></script>
     </body>
 </html>

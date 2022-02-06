@@ -93,3 +93,23 @@ input:checked + .slider:before
     right: 40vw;
     bottom: 5vh;
 }
+
+button
+{
+    margin: 1%;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 6px;
+    display: inline;
+    color: #ffffff;
+    background-color: #3399ff;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+button:hover
+{
+    background-color: #84c2ff;
+}

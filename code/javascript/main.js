@@ -9,6 +9,7 @@ let potencia;
 let checkbox;
 let corpo;
 let txtvolts;
+let txtohm;
 
 //num precisa dessa linha, mas vai que...
 checkbox = document.getElementById("darkmode");
@@ -32,6 +33,7 @@ function darkmode()
     checkbox = document.getElementById("darkmode");
     corpo = document.getElementById("corpo");
     txtvolts = document.getElementById("txtvolts");
+    txtohm = document.getElementById("txtohm");
 
     //da utilidade a chave de darkmode
     if(checkbox.checked == true)
@@ -41,6 +43,8 @@ function darkmode()
         corpo.style.backgroundColor = "#000000";
         txtvolts.style.backgroundColor = "#ffffff";
         txtvolts.style.border = "3px solid #3399ff"
+        txtohm.style.backgroundColor = "#ffffff";
+        txtohm.style.border = "3px solid #3399ff"
     }
     else
     {
@@ -49,6 +53,8 @@ function darkmode()
         corpo.style.backgroundColor = "#ffffff";
         txtvolts.style.backgroundColor = "#ffffff";
         txtvolts.style.border = "2px solid #3399ff"
+        txtohm.style.backgroundColor = "#ffffff";
+        txtohm.style.border = "2px solid #3399ff"
     }
 }
 
