@@ -84,6 +84,7 @@ input:checked + .slider:before
     border-radius: 6px;
     padding: 2vh;
     font-size: 20px;
+    text-align: center;
 }
 
 #dark
@@ -103,10 +104,8 @@ button
     display: inline;
     color: #ffffff;
     background-color: #3399ff;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-inline: 20vw;
+    padding-block: 3vh;
 }
 
 button:hover
