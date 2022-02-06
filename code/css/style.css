@@ -76,3 +76,20 @@ input:checked + .slider:before
 {
     border-radius: 50%;
 }
+
+.textbox
+{
+    margin-bottom: 1vh;
+    border: 3px solid #3399ff;
+    border-radius: 6px;
+    padding: 2vh;
+    font-size: 20px;
+}
+
+#dark
+{
+    position: absolute;
+    left: 40vw;
+    right: 40vw;
+    bottom: 5vh;
+}
